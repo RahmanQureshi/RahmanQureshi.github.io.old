@@ -1,0 +1,79 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-carousel.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-glyphs.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500,400italic,500italic,700italic,900,300,300italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="scripts/bootstrap-carousel.js"></script>
+	<script src="scripts/script.js"></script>
+</head>
+<body>
+	<div id="screen-overlay">
+	</div>
+
+	<div class="projects">
+		<div id="project-carousel-wrapper">
+			<button class="hidden-button" onclick="closeCarousel()"><i class="fa fa-times close-button" aria-hidden="true"></i></button>
+			<div id="project-carousel" class="carousel slide" data-ride="carousel">
+			  <!-- Indicators -->
+			  <ol class="carousel-indicators">
+			  </ol>
+			  <!-- Wrapper for slides -->
+			  <div class="carousel-inner" role="listbox">
+			  </div>
+			  <!-- Controls -->
+			  <a class="left carousel-control" href="#project-carousel" role="button" data-slide="prev">
+			    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+			  <a class="right carousel-control" href="#project-carousel" role="button" data-slide="next">
+			    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			    <span class="sr-only">Next</span>
+			  </a>
+			</div>
+			<div id="project-description">
+				This is a project description
+			</div>
+		</div>
+		<a class="panel-link" data-project="ledcube" href="">
+		  <div class="panel">
+		    <img src="img/project-ledcube-front.jpg" alt="">
+		    <div class="panel-overlay blue">
+		      <h2 class="panel-title">8x8x8 LED Cube</h2>
+		      <div class="panel-description">An LED cube designed and built from scratch driven by an atmega328p</div>
+		      <i class="fa fa-arrow-circle-o-right panel-arrow" aria-hidden="true"></i>
+		      <ul>
+		        <li>EMBEDDED SOFTWARE DEVELOPMENT</li> &bull;
+		        <li>HARDWARE DESIGN</li> &bull;
+		        <li>PCB LAYOUT</li> &bull;
+		        <li>WOOD WORKING</li>
+		      </ul>
+		    </div>
+		  </div>
+		</a>
+	  <div class="panel">
+	    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Philippine-stock-market-board.jpg" alt="">
+	    <div class="panel-overlay green">
+	    </div>
+	  </div>
+	  <div class="panel">
+	    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Philippine-stock-market-board.jpg" alt="">
+	    <div class="panel-overlay yellow">
+	    </div>    
+	  </div>
+	  <div class="panel">
+	    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Philippine-stock-market-board.jpg" alt="">
+	    <div class="panel-overlay blue">
+	    </div>
+	  </div>
+
+	</div>
+
+</body>
+
+
+</html>
