@@ -18,8 +18,8 @@ body {
 }
 
 #screen-overlay.fadeInFromNoneAnimation {
-  animation: fadeInFromNone 1s ease-out;
-  opacity:0.7;
+  animation: fadeInFromNone 500ms ease-out;
+  opacity:0.9;
   display:block;
 }
 
@@ -72,7 +72,10 @@ i.close-button {
   width:50%;
   display:none;
   z-index:2;
-  background-color:#eee;
+  background-color:#111;
+  border-radius:10px;
+  color:white;
+  text-align:center;
 }
 
 /* Panels */
@@ -83,24 +86,6 @@ i.close-button {
   float:left;
   text-align:center;
   position:relative;
-}
-
-@media (min-width: 1201px){
-  .panel {
-    width:33.33333%;
-    }
-}
-
-@media (max-width: 1200px){
-  .panel {
-    width:50%;
-    }
-}
-
-@media (max-width: 600px){
-  .panel {
-    width:100%;
-    }
 }
 
 .panel > img {
@@ -129,15 +114,15 @@ i.close-button {
 }
 
 .panel-overlay.red:hover {
-  background-color: rgba(255, 0, 0, 0.4); //clear
+  background-color: rgba(255, 0, 0, 0.7); 
 }
 
 .panel-overlay.green {
-  background-color: rgba(0, 255, 0, 0); //clear
+  background-color: rgba(0, 190, 0, 0); //clear
 }
 
 .panel-overlay.green:hover {
-  background-color: rgba(0, 255, 0, 0.4); //clear
+  background-color: rgba(0, 190, 0, 0.7);
 }
 
 .panel-overlay.blue {
@@ -145,7 +130,7 @@ i.close-button {
 }
 
 .panel-overlay.blue:hover {
-  background-color: rgba(0, 0, 255, 0.4); //clear
+  background-color: rgba(0, 0, 255, 0.7);
 }
 
 .panel-overlay.yellow {
@@ -153,27 +138,30 @@ i.close-button {
 }
 
 .panel-overlay.yellow:hover {
-  background-color: rgba(255, 255, 0, 0.4); //clear
+  background-color: rgba(255, 255, 0, 0.7); 
 }
 
 
 .panel-title {
   color: white;
   transition: all 500ms;
-  margin-top:0%;
+  margin-top:15%;
   opacity:0;
-  margin-bottom:5px;
+  margin-bottom:10px;
   font-size:34px;
+  font-weight:bold;
 }
 
 .panel:hover .panel-title {
-  margin-top:15%;
+  margin-top:25%;
   opacity:1;
 }
 
 .panel-description {
   color:white;
   opacity:0;
+  font-size:16px;
+  padding: 0 15%;
   transition:all 500ms;
 }
 
@@ -194,7 +182,7 @@ i.panel-arrow {
 
 .panel:hover i.panel-arrow {
   opacity:1;
-  top:50%;
+  top: 60%;
 }
 
 .panel ul {
@@ -215,4 +203,27 @@ i.panel-arrow {
 
 .panel:hover ul {
   opacity:1;
+}
+
+@media (min-width: 1201px){
+  .panel {
+    width:33.33333%;
+    }
+}
+
+@media (max-width: 1200px){
+  .panel {
+    width:50%;
+    }
+
+  i.panel-arrow {
+    display:none;
+  }
+
+}
+
+@media (max-width: 600px){
+  .panel {
+    width:100%;
+    }
 }
