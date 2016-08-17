@@ -13,12 +13,13 @@
 </head>
 <body>
 
-	<div id="welcome-box"></div>
-	<div id="profile-picture"><img src=""></div>
+	<div id="header"></div>
+
+	<div class="entire-screen">
+		<div id="profile-picture"><img src="img/profile-picture.jpg"></div>
+	</div>
 
 	<div id="screen-overlay">
-	</div>
-	<div class="projects">
 		<div id="project-carousel-wrapper">
 			<button class="hidden-button" onclick="closeCarousel()"><i class="fa fa-times close-button" aria-hidden="true"></i></button>
 			<div id="project-carousel" class="carousel slide" data-ride="carousel">
@@ -42,6 +43,8 @@
 				This is a project description
 			</div>
 		</div>
+	</div>
+	<div class="projects entire-screen">
 		<a class="panel-link" data-project="ledcube" href="">
 		  <div class="panel">
 		    <img src="img/project-ledcube-front.jpg" alt="">
