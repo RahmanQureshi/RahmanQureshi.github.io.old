@@ -9,6 +9,10 @@ body {
   min-height:100%;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 
 /* Header */
 
@@ -216,11 +220,11 @@ i.close-button {
 }
 
 .panel-overlay.red {
-  background-color: rgba(255, 0, 0, 0); //clear
+  background-color: rgba(150, 0, 0, 0); //clear
 }
 
 .panel-overlay.red:hover {
-  background-color: rgba(255, 0, 0, 0.7); 
+  background-color: rgba(150, 0, 0, 0.7); 
 }
 
 .panel-overlay.green {
