@@ -65,7 +65,12 @@ function fillCarousel(urlList, captionList, description) {
 
 	for(var i=0; i<urlList.length; i++)
 	{
-		$('<div class="item"><img src="' + urlList[i] + '"><div class="carousel-caption">' + captionList[i] +'</div></div>').appendTo('.carousel-inner');
+		if(i<captionList.length)
+		{
+			$('<div class="item"><img src="' + urlList[i] + '"><div class="carousel-caption">' + captionList[i] +'</div></div>').appendTo('.carousel-inner');
+		} else {
+			$('<div class="item"><img src="' + urlList[i] + '"><div class="carousel-caption">' + "" +'</div></div>').appendTo('.carousel-inner');
+		}
 		$('<li data-target="#carousel-example-generic" data-slide-to="'+i+'"></li>').appendTo('.carousel-indicators');
 	}
   $('.item').first().addClass('active');
@@ -88,6 +93,16 @@ projectData = {
 		"img-urls": ["img/project-ndt-0.jpg", "img/project-ndt-1.jpg", "img/project-ndt-2.jpg", "img/project-ndt-3.jpg", "img/project-ndt-4.jpg", "img/project-ndt-5.jpg", "img/project-ndt-6.jpg", "img/project-ndt-7.jpg", "img/project-ndt-8.jpg", "img/project-ndt-9.jpg"],
 		"captions": ["Machine learning results visualization", "One of many pipe samples used in this research", "Signal of reflections from pipe", "Apparatus", "LPF to remove noise and extract peaks", "LPF to remove noise and extract peaks", "Signal of reflections from steel with primer", "Cross correlation", "Mathematical model of attentuation in primer with 99% and 95% confidence interval", "Analyzing the decay constant of steel reverbs in pipes with strong bonds and weak bonds."],
 		"description": "Identifying regions of weak bonding is particularly challenging using traditional ultrasonic methods for two reasons. First, instead of complete delamination in weak bonds, there remains high acoustic contact between the adhesive and primer so that interface reflections are minimal (a 'kissing' bond), and second, there are uncertainties with material/layer properties. A machine learning approach is adopted so that statistically significant changes in the data can be observed in the presence of layer property variations. Features are extracted from pulse-echo signals obtained by applying an ultrasonic broadband pulse to the pipe exterior."
+	},
+	"geochat": {
+		"img-urls": ["img/project-geochat-0.jpg","img/project-geochat-1.jpg","img/project-geochat-2.jpg","img/project-geochat-3.jpg"],
+		"captions": ["","","","Backend design"],
+		"description": "GeoChat is an app that geocontextifies chatrooms. There is no account sign up. Simply open the app and add an alias to get started. You can create a room by providing a room name and a limiting radius or you can join existing rooms in your area."
+	},
+	"route-planner": {
+		"img-urls": ["img/project-route-planner-0.jpg"],
+		"captions": [],
+		"description": "As the UTEK 2015 Programming Competition director, design a competition package to test student's problem solving, and ability to design and write software. Click here to see the <a href=\"docs/UTEK-2016-Programming-Competition-Competitors-Package-FINAL.docx\">competition package</a>. See a prototype on <a href=\"http://toronto-route-planner.herokuapp.com/\">heroku</a>."
 	},
 	"template": {
 		"img-urls": [],

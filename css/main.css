@@ -144,6 +144,11 @@ button.welcome-button {
   background-color:rgba(0,0,0,0.6);
 }
 
+#carousel-project-description {
+  font-size:16px;
+  margin: 10px auto;
+}
+
 .hidden-button {
   border: 0;
   background: none;
@@ -235,11 +240,11 @@ i.close-button {
 }
 
 .panel-overlay.yellow {
-  background-color: rgba(255, 255, 0, 0); //clear
+  background-color: rgba(150, 150, 0, 0); //clear
 }
 
 .panel-overlay.yellow:hover {
-  background-color: rgba(255, 255, 0, 0.7); 
+  background-color: rgba(150, 150, 0, 0.7); 
 }
 
 
