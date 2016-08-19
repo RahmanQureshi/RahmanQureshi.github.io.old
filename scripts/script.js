@@ -23,7 +23,26 @@ function setPanelHeight() {
 function init() {
 	setPanelHeight();
 	attachPanelListeners();
-	//fillCarousel(projectData["ledcube"]["img-urls"], projectData["ledcube"]["captions"]);
+	attachAnchorScrollLinks();
+}
+
+/**
+* Locates anchor links and attaches a click listener that smoothly scrolls to the element whose id
+* is equal to the anchor link.
+*
+* Reference: http://stackoverflow.com/questions/12102118/scrollintoview-animation
+*
+**/
+function attachAnchorScrollLinks() {
+	$("a").click(function (e) {
+		var href = $(this).attr('href')
+		if(href!=undefined && href.length>0 && href[0]=="#") {
+			e.preventDefault();
+			$('html, body').animate({
+			    scrollTop: $(href).offset().top
+			}, 1000);
+		}
+	});
 }
 
 function attachPanelListeners() {

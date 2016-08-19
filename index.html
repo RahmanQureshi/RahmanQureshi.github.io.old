@@ -12,16 +12,16 @@
 	<script src="scripts/script.js"></script>
 </head>
 <body>
-
-	<div id="header"></div>
-
 	<div id="welcome" class="entire-screen">
-		<div id="welcome-message">
-			Hi, my name is Rahman.
+		<div id="welcome-centered-box">
+			<div id="welcome-message">
+				Hi, my name is Rahman.
+			</div>
+			<div id="welcome-buttons">
+				<a href="#projects"><button class="button welcome-button">PROJECTS</button></a>
+			</div>
 		</div>
-		<a href="#projects"><button class="button welcome-button">PROJECTS</button></a>
 	</div>
-
 	<div id="screen-overlay">
 		<div id="project-carousel-wrapper">
 			<button class="hidden-button" onclick="closeCarousel()"><i class="fa fa-times close-button" aria-hidden="true"></i></button>
@@ -47,8 +47,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="projects entire-screen">
-		<a name="projects"></a>
+	<div id="projects" class="entire-screen">
 		<a class="panel-link" data-project="ledcube" href="">
 		  <div class="panel">
 		    <img src="img/project-ledcube-front.jpg" alt="">
@@ -112,10 +111,6 @@
 		    </div>
 		  </div>
 		</a>
-
 	</div>
-
 </body>
-
-
 </html>
