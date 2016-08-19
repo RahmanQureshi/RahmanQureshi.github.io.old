@@ -102,7 +102,7 @@ projectData = {
 	"route-planner": {
 		"img-urls": ["img/project-route-planner-0.jpg"],
 		"captions": [],
-		"description": "As the UTEK 2015 Programming Competition director, design a competition package to test student's problem solving, and ability to design and write software. Click here to see the <a href=\"docs/UTEK-2016-Programming-Competition-Competitors-Package-FINAL.docx\">competition package</a>. See a prototype on <a href=\"http://toronto-route-planner.herokuapp.com/\">heroku</a>."
+		"description": "As the UTEK 2015 Programming Competition director, design a competition package to test student's problem solving, and ability to design and write software. Click here to see the <a href=\"docs/UTEK-2016-Programming-Competition-Competitors-Package-FINAL.docx\">competition package</a>. See a prototype on <a target=\"_blank\" href=\"http://toronto-route-planner.herokuapp.com/\">heroku</a>."
 	},
 	"template": {
 		"img-urls": [],
