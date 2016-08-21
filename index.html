@@ -2,7 +2,7 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<!--<link rel="stylesheet" type="text/css" href="css/animate.css">-->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-carousel.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-glyphs.css">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500,400italic,500italic,700italic,900,300,300italic' rel='stylesheet' type='text/css'>
@@ -18,32 +18,7 @@
 				Hi, my name is Rahman.
 			</div>
 			<div id="welcome-buttons">
-				<a href="#projects"><button class="button welcome-button">PROJECTS</button></a>
-			</div>
-		</div>
-	</div>
-	<div id="screen-overlay">
-		<div id="project-carousel-wrapper">
-			<button class="hidden-button" onclick="closeCarousel()"><i class="fa fa-times close-button" aria-hidden="true"></i></button>
-			<div id="project-carousel" class="carousel slide" data-ride="carousel">
-			  <!-- Indicators -->
-			  <ol class="carousel-indicators">
-			  </ol>
-			  <!-- Wrapper for slides -->
-			  <div class="carousel-inner" role="listbox">
-			  </div>
-			  <!-- Controls -->
-			  <a class="left carousel-control" href="#project-carousel" role="button" data-slide="prev">
-			    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-			    <span class="sr-only">Previous</span>
-			  </a>
-			  <a class="right carousel-control" href="#project-carousel" role="button" data-slide="next">
-			    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-			    <span class="sr-only">Next</span>
-			  </a>
-			</div>
-			<div id="carousel-project-description">
-				This is a project description
+				<a class="scroll-link" href="#projects"><button class="button welcome-button">PROJECTS</button></a>
 			</div>
 		</div>
 	</div>
@@ -112,5 +87,34 @@
 		  </div>
 		</a>
 	</div>
+	<div id="about" class="entire-screen">
+	</div>
+
+	<div id="screen-overlay">
+		<div id="project-carousel-wrapper">
+			<button class="hidden-button" onclick="closeCarousel()"><i class="fa fa-times close-button" aria-hidden="true"></i></button>
+			<div id="project-carousel" class="carousel slide" data-ride="carousel">
+			  <!-- Indicators -->
+			  <ol class="carousel-indicators">
+			  </ol>
+			  <!-- Wrapper for slides -->
+			  <div class="carousel-inner" role="listbox">
+			  </div>
+			  <!-- Controls -->
+			  <a class="left carousel-control" href="#project-carousel" role="button" data-slide="prev">
+			    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+			  <a class="right carousel-control" href="#project-carousel" role="button" data-slide="next">
+			    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			    <span class="sr-only">Next</span>
+			  </a>
+			</div>
+			<div id="carousel-project-description">
+				This is a project description
+			</div>
+		</div>
+	</div>
+
 </body>
 </html>

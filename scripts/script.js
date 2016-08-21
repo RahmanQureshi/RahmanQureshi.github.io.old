@@ -34,7 +34,7 @@ function init() {
 *
 **/
 function attachAnchorScrollLinks() {
-	$("a").click(function (e) {
+	$("a.scroll-link").click(function (e) {
 		var href = $(this).attr('href')
 		if(href!=undefined && href.length>0 && href[0]=="#") {
 			e.preventDefault();
