@@ -7,23 +7,25 @@ $(document).ready(function () {
 	init();
 });
 
+function init() {
+	setPanelHeight();
+	attachPanelListeners();
+	attachAnchorScrollLinks();
+}
+
 function setPanelHeight() {
-	var windowWidth = $(window).width();
+	var windowWidth = window.innerWidth;
+	console.log(windowWidth);
 	var panelHeight;
 	if(windowWidth > 1200) {
 		panelHeight = (windowWidth/3)*3/4;
-	} else if(windowWidth > 600 && windowWidth < 1200) {
+	} else if(windowWidth > 750 && windowWidth < 1200) {
+		console.log("here");
 		panelHeight = (windowWidth/2)*3/4;
 	} else {
 		panelHeight = (windowWidth)*3/4;
 	}
 	$(".panel").css('height', panelHeight + 'px');
-}
-
-function init() {
-	setPanelHeight();
-	attachPanelListeners();
-	attachAnchorScrollLinks();
 }
 
 /**

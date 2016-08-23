@@ -7,12 +7,23 @@ body {
 
 .entire-screen{
   min-height:100%;
+  display:inline-block;
+  width:100%;
 }
 
 a {
   text-decoration: none !important;
 }
 
+/* Construction message */
+
+
+/* Contact */
+#about-profile-picture {
+  position:absolute;
+  right: 0;
+  height:100%;
+}
 
 /* Header */
 
@@ -32,6 +43,10 @@ button.welcome-button {
   width:300px;
   margin: auto;
   border: 1px solid rgba(0, 0, 255, 0.5);
+}
+
+#welcome-buttons {
+  margin-top:30px;
 }
 
 .button {
@@ -80,16 +95,23 @@ button.welcome-button {
   padding: 0 100px;
 }
 
-#welcome-left {
+.block-79 {
   display:inline-block;
   width:79%;
   margin:0;
   padding:0;
 }
 
-#welcome-right {
+.block-20 {
   display:inline-block;
   width:20%;
+  margin:0;
+  padding:0;
+}
+
+.block-50 {
+  display:inline-block;
+  width:50%;
   margin:0;
   padding:0;
 }
@@ -98,7 +120,6 @@ button.welcome-button {
   display:block;
   text-align:center;
   font-size:64px;
-  margin-bottom:30px;
 }
 
 #welcome-centered-box {
@@ -342,7 +363,7 @@ i.panel-arrow {
 
 }
 
-@media (max-width: 600px){
+@media (max-width: 750px){
   .panel {
     width:100%;
     }
