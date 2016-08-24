@@ -88,7 +88,18 @@ function fillCarousel(urlList, captionList, description) {
 	{
 		if(i<captionList.length)
 		{
-			$('<div class="item"><img src="' + urlList[i] + '"><div class="carousel-caption">' + captionList[i] +'</div></div>').appendTo('.carousel-inner');
+			if(urlList[i].split("/")[0]=="vid")
+			{
+				$('<div class="item"><video class="carousel-video" src="' + urlList[i] + '" controls/><div class="carousel-caption">' + captionList[i] +'</div></div>').appendTo('.carousel-inner');
+			} else if(urlList[i].includes("youtube.com/embed"))
+			{
+				$('<div class="item"><iframe class="carousel-video" src="' + urlList[i] + '" frameborder="0" allowfullscreen></iframe><div class="carousel-caption">' + captionList[i] +'</div></div>').appendTo('.carousel-inner');
+			}
+			else // image
+			{
+				$('<div class="item"><img src="' + urlList[i] + '"><div class="carousel-caption">' + captionList[i] +'</div></div>').appendTo('.carousel-inner');
+			}
+	
 		} else {
 			$('<div class="item"><img src="' + urlList[i] + '"><div class="carousel-caption">' + "" +'</div></div>').appendTo('.carousel-inner');
 		}
@@ -106,8 +117,8 @@ function emptyCarousel() {
 
 projectData = {
 	"ledcube": {
-		"img-urls": ["img/project-ledcube-0.jpg", "img/project-ledcube-1.jpg", "img/project-ledcube-2.jpg", "img/project-ledcube-3.jpg", "img/project-ledcube-4.jpg", "img/project-ledcube-5.jpg", "img/project-ledcube-6.jpg", "img/project-ledcube-7.jpg", "img/project-ledcube-8.jpg", "img/project-ledcube-9.jpg" ],
-		"captions": ["Finished LED cube", "Base assembly", "Inserting the LED panels", "All LED panels inserted", "First test!", "Constructing each panel", "Bent and cut 512 LEDs", "Constructing each row", "Applying 20V to check current limiter", "PCB layout"],
+		"img-urls": ["https://www.youtube.com/embed/8kPiyt_1kfw", "img/project-ledcube-0.jpg", "img/project-ledcube-1.jpg", "img/project-ledcube-2.jpg", "img/project-ledcube-3.jpg", "img/project-ledcube-4.jpg", "img/project-ledcube-5.jpg", "img/project-ledcube-6.jpg", "img/project-ledcube-7.jpg", "img/project-ledcube-8.jpg", "img/project-ledcube-9.jpg" ],
+		"captions": ["", "Finished LED cube", "Base assembly", "Inserting the LED panels", "All LED panels inserted", "First test!", "Constructing each panel", "Bent and cut 512 LEDs", "Constructing each row", "Applying 20V to check current limiter", "PCB layout"],
 		"description": "An 8x8x8 LED cube made and designed from scratch."
 	},
 	"ndt": {

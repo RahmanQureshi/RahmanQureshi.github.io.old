@@ -205,6 +205,16 @@ button.welcome-button {
 
 
 /* Project Carousel*/
+.carousel-video {
+  width:100%;
+  height:70%;
+}
+
+
+.carousel-control { /* Class defined by bootstrap. Making it shorter so that video controls can be clicked*/
+  height:95%;
+}
+
 .carousel-caption {
   background-color:rgba(0,0,0,0.6);
 }
