@@ -15,14 +15,65 @@ a {
   text-decoration: none !important;
 }
 
+.block-79 {
+  display:inline-block;
+  width:79%;
+  margin:0;
+  padding:0;
+}
+
+.block-20 {
+  display:inline-block;
+  width:20%;
+  margin:0;
+  padding:0;
+}
+
+.block-50 {
+  display:inline-block;
+  width:50%;
+  margin:0;
+  padding:0;
+}
+
+.block-39 {
+  display:inline-block;
+  width:39%;
+  margin:0;
+  padding:0;
+}
+
+.block-60 {
+  display:inline-block;
+  width:60%;
+  margin:0;
+  padding:0; 
+}
+
 /* Construction message */
 
 
+/* Divider */
+.divider {
+  background-color:#03D1F8;
+  height:100px;
+  width:100%;
+  margin: 20px 0;
+}
+
 /* Contact */
-#about-profile-picture {
+#contact-profile-picture {
   position:absolute;
   right: 0;
   height:100%;
+}
+
+#contact-me-info {
+  text-align: center;
+}
+
+#contact-me-list {
+  list-style:none;
 }
 
 /* Header */
@@ -41,7 +92,7 @@ a {
 button.welcome-button {
   display:block;
   width:300px;
-  margin: auto;
+  margin: 20px auto;
   border: 1px solid rgba(0, 0, 255, 0.5);
 }
 
@@ -93,27 +144,6 @@ button.welcome-button {
 #welcome {
   margin-top:60px;
   padding: 0 100px;
-}
-
-.block-79 {
-  display:inline-block;
-  width:79%;
-  margin:0;
-  padding:0;
-}
-
-.block-20 {
-  display:inline-block;
-  width:20%;
-  margin:0;
-  padding:0;
-}
-
-.block-50 {
-  display:inline-block;
-  width:50%;
-  margin:0;
-  padding:0;
 }
 
 #welcome-message {
@@ -294,7 +324,7 @@ i.close-button {
 }
 
 .panel:hover .panel-title {
-  margin-top:25%;
+  margin-top:20%;
   opacity:1;
 }
 
@@ -313,8 +343,8 @@ i.close-button {
 i.panel-arrow {
   position:absolute;
   color:white;
-  font-size:90px;
-  top:80%;
+  font-size:50px;
+  top:70%;
   width:100%;
   opacity:0;
   left:0;
@@ -323,7 +353,7 @@ i.panel-arrow {
 
 .panel:hover i.panel-arrow {
   opacity:1;
-  top: 60%;
+  top: 65%;
 }
 
 .panel ul {

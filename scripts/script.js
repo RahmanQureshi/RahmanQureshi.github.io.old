@@ -36,7 +36,7 @@ function setPanelHeight() {
 *
 **/
 function attachAnchorScrollLinks() {
-	$("a.scroll-link").click(function (e) {
+	$(".scroll-link").click(function (e) {
 		var href = $(this).attr('href')
 		if(href!=undefined && href.length>0 && href[0]=="#") {
 			e.preventDefault();
