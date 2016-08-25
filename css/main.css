@@ -431,13 +431,6 @@ i.panel-arrow {
   i.panel-arrow {
     display:none;
   }
-
-}
-
-@media (max-width: 750px){
-  .panel {
-    width:100%;
-    }
   .block-60 {
     width:100%;
   }
@@ -445,4 +438,10 @@ i.panel-arrow {
     width:100%;
     height:auto;
   }
+}
+
+@media (max-width: 750px){
+  .panel {
+    width:100%;
+    }
 }
