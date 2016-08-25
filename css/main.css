@@ -1,8 +1,9 @@
 /* General */
-body {
+body, html {
 	width:100%;
 	margin:0;
 	font-family: 'Roboto', sans-serif;
+  font-size:16px !important;
 }
 
 .entire-screen{
@@ -56,9 +57,14 @@ a {
 /* Divider */
 .divider {
   background-color:#03D1F8;
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#03D1F8, white, #03D1F8); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#03D1F8, white, #03D1F8); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#03D1F8, white, #03D1F8); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#03D1F8, white, #03D1F8); /* Standard syntax */
   height:100px;
   width:100%;
-  margin: 20px 0;
+  margin: 50px 0;
 }
 
 /* Contact */
@@ -70,6 +76,7 @@ a {
 
 #contact-me-info {
   text-align: center;
+  font-size:inherit;
 }
 
 #contact-me-list {
@@ -210,6 +217,12 @@ button.welcome-button {
   height:70%;
 }
 
+.carousel-inner > .item >img.carousel-img {
+  display:block;
+  margin: 0 auto;
+  max-height:600px;
+}
+
 
 .carousel-control { /* Class defined by bootstrap. Making it shorter so that video controls can be clicked*/
   height:95%;
@@ -290,12 +303,30 @@ i.close-button {
   transition: background-color 300ms;
 }
 
+
+.panel-overlay.orange {
+  background-color: rgba(255, 100, 0, 0);
+}
+
+.panel-overlay.orange:hover {
+  background-color: rgba(255, 100, 0, 0.7);
+}
+
+.panel-overlay.purple {
+  background-color: rgba(75, 0, 130, 0);
+}
+
+.panel-overlay.purple:hover {
+  background-color: rgba(75, 0, 130, 0.7);
+}
+
+
 .panel-overlay.red {
-  background-color: rgba(150, 0, 0, 0); //clear
+  background-color: rgba(229, 43, 80, 0); //clear
 }
 
 .panel-overlay.red:hover {
-  background-color: rgba(150, 0, 0, 0.7); 
+  background-color: rgba(229, 43, 80, 0.7); 
 }
 
 .panel-overlay.green {
@@ -315,11 +346,11 @@ i.close-button {
 }
 
 .panel-overlay.yellow {
-  background-color: rgba(150, 150, 0, 0); //clear
+  background-color: rgba(180, 150, 20, 0); //clear
 }
 
 .panel-overlay.yellow:hover {
-  background-color: rgba(150, 150, 0, 0.7); 
+  background-color: rgba(180, 150, 20, 0.7); 
 }
 
 
@@ -407,4 +438,11 @@ i.panel-arrow {
   .panel {
     width:100%;
     }
+  .block-60 {
+    width:100%;
+  }
+  #contact-profile-picture {
+    width:100%;
+    height:auto;
+  }
 }

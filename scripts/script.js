@@ -97,11 +97,11 @@ function fillCarousel(urlList, captionList, description) {
 			}
 			else // image
 			{
-				$('<div class="item"><img src="' + urlList[i] + '"><div class="carousel-caption">' + captionList[i] +'</div></div>').appendTo('.carousel-inner');
+				$('<div class="item"><img class="carousel-img" src="' + urlList[i] + '"><div class="carousel-caption">' + captionList[i] +'</div></div>').appendTo('.carousel-inner');
 			}
 	
 		} else {
-			$('<div class="item"><img src="' + urlList[i] + '"><div class="carousel-caption">' + "" +'</div></div>').appendTo('.carousel-inner');
+			$('<div class="item"><img class="carousel-img" src="' + urlList[i] + '"><div class="carousel-caption">' + "" +'</div></div>').appendTo('.carousel-inner');
 		}
 		$('<li data-target="#carousel-example-generic" data-slide-to="'+i+'"></li>').appendTo('.carousel-indicators');
 	}
@@ -135,6 +135,16 @@ projectData = {
 		"img-urls": ["img/project-route-planner-0.jpg"],
 		"captions": [],
 		"description": "As the UTEK 2015 Programming Competition director, design a competition package to test student's problem solving, and ability to design and write software. Click here to see the <a href=\"docs/UTEK-2016-Programming-Competition-Competitors-Package-FINAL.docx\">competition package</a>. See a prototype on <a target=\"_blank\" href=\"http://toronto-route-planner.herokuapp.com/\">heroku</a>."
+	},
+	"ss": {
+		"img-urls": ["img/project-ss-0.jpg", "img/project-ss-1.jpg"],
+		"captions": ["", ""],
+		"description": "Power subsystem of a 3U CubeSat built by the University of Toronto Aerospace Team"
+	},
+	"house-doctor": {
+		"img-urls": ["img/project-house-doctor-0.jpg","img/project-house-doctor-1.jpg","img/project-house-doctor-2.jpg"],
+		"captions": [],
+		"description": "An android app that scrapes medical information using Bing API and delivers it via SMS using the twilio API."
 	},
 	"template": {
 		"img-urls": [],
