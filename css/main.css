@@ -260,6 +260,7 @@ button.welcome-button {
 }
 
 /* Screen overlay */
+
 #screen-overlay {
   position:fixed;
   top:0;
@@ -363,7 +364,7 @@ i.close-button:hover {
 }
 
 #project-carousel-wrapper {
-  position:absolute;
+  position:fixed;
   left:20%;
   top:10%;
   width:60%;

@@ -1,26 +1,26 @@
 var projectData;
 
 $(document).ready(function () {
-	$(window).resize(function (){
-		setPanelHeight();
-	});
 	init();
 });
 
 function init() {
+	$(window).resize(function (){
+		setPanelHeight();
+	});
 	setPanelHeight();
 	attachPanelListeners();
 	attachAnchorScrollLinks();
+	attachOverlayListener();
 }
+
 
 function setPanelHeight() {
 	var windowWidth = window.innerWidth;
-	console.log(windowWidth);
 	var panelHeight;
 	if(windowWidth > 1200) {
 		panelHeight = (windowWidth/3)*3/4;
 	} else if(windowWidth > 750 && windowWidth < 1200) {
-		console.log("here");
 		panelHeight = (windowWidth/2)*3/4;
 	} else {
 		panelHeight = (windowWidth)*3/4;
@@ -55,6 +55,12 @@ function attachPanelListeners() {
 		emptyCarousel();
 		fillCarousel(projectData[project]["img-urls"], projectData[project]["captions"], projectData[project]["description"]);
 		showCarousel();
+	});
+}
+
+function attachOverlayListener() {
+	$('#screen-overlay').click(function (e){
+		closeCarousel();
 	});
 }
 
