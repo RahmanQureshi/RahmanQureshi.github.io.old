@@ -242,6 +242,15 @@ button.welcome-button {
   text-align:center;
 }
 
+@media (max-width: 750px){
+  #welcome-centered-box {
+    position:absolute;
+    width:100%;
+    top:20%;
+    left: 0;
+    text-align:center;
+  }
+}
 
 #profile-picture {
 }
