@@ -11,6 +11,7 @@ body, html {
   min-height:100%;
   display:inline-block;
   width:100%;
+  position:relative;
 }
 
 a {
@@ -65,21 +66,66 @@ a {
     width: 100%;
   }
 }
+/* About */
+#about-message {
+  font-size: 56px;
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  margin-top:-36px;
+}
 
-/* Construction message */
-
-
-/* Divider */
+/* Divider and quotes */
 .divider {
   background-color:#03D1F8;
-  background: red; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#03D1F8, white, #03D1F8); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#03D1F8, white, #03D1F8); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#03D1F8, white, #03D1F8); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#03D1F8, white, #03D1F8); /* Standard syntax */
-  height:100px;
+  background: #000; /* For browsers that do not support gradients */
+  background: linear-gradient(#999, white, #999); /* Standard syntax */
+  height:200px;
   width:100%;
   margin: 50px 0;
+}
+
+blockquote {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  top:35%;
+  height:60px;
+  font-style: italic;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.25em 40px;
+  line-height: 1.45;
+  position: relative;
+  color: #383838;
+}
+
+@media (max-width: 600px){
+  blockquote {
+    width: 90%;
+  }
+}
+
+blockquote:before {
+  display: block;
+  content: "\201C";
+  font-size: 80px;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  color: #7a7a7a;
+}
+
+cite {
+  color: #999999;
+  font-size: 14px;
+  display: block;
+  margin-top: 5px;
+}
+ 
+cite:before {
+  content: "\2014 \2009";
 }
 
 /* Contact */
@@ -179,7 +225,6 @@ button.welcome-button {
 /* Welcome box / Front page */
 
 #welcome {
-  margin-top:60px;
   padding: 0 100px;
 }
 
