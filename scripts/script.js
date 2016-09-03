@@ -150,7 +150,7 @@ projectData = {
 	"fan": {
 		"img-urls": ["https://www.youtube.com/embed/OeW7NYT0q_o", "img/project-fan-0.jpg", "img/project-fan-1.jpg", "img/project-fan-2.jpg"],
 		"captions": ["", "", "", ""],
-		"description": "UofT Hacks 2014. Using the Myo, Intel Edison, transistors, relays and logic gates to create a gesture-controlled fan."
+		"description": "UofT Hacks 2014. Please ignore my beard. Using the Myo, Intel Edison, transistors, relays and logic gates to create a gesture-controlled fan."
 	},
 	"template": {
 		"img-urls": [],
