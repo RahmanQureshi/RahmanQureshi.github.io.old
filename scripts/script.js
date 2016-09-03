@@ -93,7 +93,7 @@ function fillCarousel(urlList, captionList, description) {
 				$('<div class="item"><video class="carousel-video" src="' + urlList[i] + '" controls/><div class="carousel-caption">' + captionList[i] +'</div></div>').appendTo('.carousel-inner');
 			} else if(urlList[i].includes("youtube.com/embed"))
 			{
-				$('<div class="item"><iframe class="carousel-video" src="' + urlList[i] + '" frameborder="0" allowfullscreen></iframe><div class="carousel-caption">' + captionList[i] +'</div></div>').appendTo('.carousel-inner');
+				$('<div class="item"><div class="carousel-video-wrapper"><iframe class="carousel-video" src="' + urlList[i] + '" frameborder="0" allowfullscreen></iframe></div><div class="carousel-caption">' + captionList[i] +'</div></div>').appendTo('.carousel-inner');
 			}
 			else // image
 			{
@@ -101,7 +101,8 @@ function fillCarousel(urlList, captionList, description) {
 			}
 	
 		} else {
-			$('<div class="item"><img class="carousel-img" src="' + urlList[i] + '"><div class="carousel-caption">' + "" +'</div></div>').appendTo('.carousel-inner');
+			console.log("Missing captions");
+			//$('<div class="item"><img class="carousel-img" src="' + urlList[i] + '"><div class="carousel-caption">' + "" +'</div></div>').appendTo('.carousel-inner');
 		}
 		$('<li data-target="#carousel-example-generic" data-slide-to="'+i+'"></li>').appendTo('.carousel-indicators');
 	}
@@ -133,7 +134,7 @@ projectData = {
 	},
 	"route-planner": {
 		"img-urls": ["img/project-route-planner-0.jpg"],
-		"captions": [],
+		"captions": ["App draws route on google maps using polylines"],
 		"description": "As the UTEK 2015 Programming Competition director, design a competition package to test student's problem solving, and ability to design and write software. Click here to see the <a href=\"docs/UTEK-2016-Programming-Competition-Competitors-Package-FINAL.docx\">competition package</a>. See a prototype on <a target=\"_blank\" href=\"http://toronto-route-planner.herokuapp.com/\">heroku</a>."
 	},
 	"ss": {
@@ -143,7 +144,7 @@ projectData = {
 	},
 	"house-doctor": {
 		"img-urls": ["img/project-house-doctor-0.jpg","img/project-house-doctor-1.jpg","img/project-house-doctor-2.jpg"],
-		"captions": [],
+		"captions": ["","",""],
 		"description": "An android app that scrapes medical information using Bing API and delivers it via SMS using the twilio API."
 	},
 	"template": {

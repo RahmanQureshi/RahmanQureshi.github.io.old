@@ -143,10 +143,10 @@
 
 	<div id="screen-overlay">
 		<div id="project-carousel-wrapper">
-			<button class="hidden-button" onclick="closeCarousel()"><i class="fa fa-times close-button" aria-hidden="true"></i></button>
+			<i onclick="closeCarousel()" class="fa fa-times close-button" aria-hidden="true"></i>
 			<div id="project-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
 			  <!-- Indicators -->
-			  <ol class="carousel-indicators">
+			  <ol style="display:none;" class="carousel-indicators"> <!-- Hiding because ugly -->
 			  </ol>
 			  <!-- Wrapper for slides -->
 			  <div class="carousel-inner" role="listbox">

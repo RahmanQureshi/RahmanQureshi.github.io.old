@@ -4,6 +4,7 @@ body, html {
 	margin:0;
 	font-family: 'Roboto', sans-serif;
   font-size:16px !important;
+  height:100%;
 }
 
 .entire-screen{
@@ -212,15 +213,30 @@ button.welcome-button {
 
 
 /* Project Carousel*/
+.carousel-video-wrapper {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 51%;
+  z-index: 9;
+}
+
+.carousel-control {
+  z-index:10;
+}
+
 .carousel-video {
+  position:absolute;
+  left:0;
+  top:0;
   width:100%;
-  height:70%;
+  height:100%;
 }
 
 .carousel-inner > .item >img.carousel-img {
   display:block;
   margin: 0 auto;
-  max-height:600px;
+  width:100%;
 }
 
 
@@ -234,12 +250,12 @@ button.welcome-button {
 
 #carousel-project-description {
   font-size:16px;
-  margin: 10px auto;
-}
-
-.hidden-button {
-  border: 0;
-  background: none;
+  line-height:30px;
+  margin: 0px auto;
+  background-color: #111;
+  width:100%;
+  position:absolute;
+  top:100%;
 }
 
 i.close-button {
@@ -249,6 +265,10 @@ i.close-button {
   font-size:40px;
   color:#8b0000;
   z-index:5;
+}
+
+i.close-button:hover {
+  cursor:pointer;
 }
 
 #project-carousel {
