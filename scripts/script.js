@@ -130,11 +130,11 @@ projectData = {
 	"geochat": {
 		"img-urls": ["img/project-geochat-0.jpg","img/project-geochat-1.jpg","img/project-geochat-2.jpg","img/project-geochat-3.jpg"],
 		"captions": ["","","","Backend design"],
-		"description": "GeoChat is an app that geocontextifies chatrooms. There is no account sign up. Simply open the app and add an alias to get started. You can create a room by providing a room name and a limiting radius or you can join existing rooms in your area."
+		"description": "Hack The North 2014. GeoChat is an app that geocontextifies chatrooms. There is no account sign up. Simply open the app and add an alias to get started. You can create a room by providing a room name and a limiting radius or you can join existing rooms in your area."
 	},
 	"route-planner": {
-		"img-urls": ["img/project-route-planner-0.jpg"],
-		"captions": ["App draws route on google maps using polylines"],
+		"img-urls": ["img/project-route-planner-0.jpg", "img/project-route-planner-1.jpg"],
+		"captions": ["App draws route on google maps using polylines", "Screen capture of demo (see link below)"],
 		"description": "As the UTEK 2015 Programming Competition director, design a competition package to test student's problem solving, and ability to design and write software. Click here to see the <a href=\"docs/UTEK-2016-Programming-Competition-Competitors-Package-FINAL.docx\">competition package</a>. See a prototype on <a target=\"_blank\" href=\"http://toronto-route-planner.herokuapp.com/\">heroku</a>."
 	},
 	"ss": {
@@ -145,7 +145,12 @@ projectData = {
 	"house-doctor": {
 		"img-urls": ["img/project-house-doctor-0.jpg","img/project-house-doctor-1.jpg","img/project-house-doctor-2.jpg"],
 		"captions": ["","",""],
-		"description": "An android app that scrapes medical information using Bing API and delivers it via SMS using the twilio API."
+		"description": "UofT Hacks 2015. An android app that scrapes medical information using Bing API and delivers it via SMS using the twilio API."
+	},
+	"fan": {
+		"img-urls": ["https://www.youtube.com/embed/OeW7NYT0q_o", "img/project-fan-0.jpg", "img/project-fan-1.jpg", "img/project-fan-2.jpg"],
+		"captions": ["", "", "", ""],
+		"description": "UofT Hacks 2014. Using the Myo, Intel Edison, transistors, relays and logic gates to create a gesture-controlled fan."
 	},
 	"template": {
 		"img-urls": [],

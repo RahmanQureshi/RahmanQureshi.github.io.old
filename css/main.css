@@ -22,6 +22,7 @@ a {
   width:79%;
   margin:0;
   padding:0;
+  vertical-align:top;
 }
 
 .block-20 {
@@ -29,6 +30,7 @@ a {
   width:20%;
   margin:0;
   padding:0;
+  vertical-align:top;
 }
 
 .block-50 {
@@ -36,6 +38,7 @@ a {
   width:50%;
   margin:0;
   padding:0;
+  vertical-align:top;
 }
 
 .block-39 {
@@ -43,6 +46,7 @@ a {
   width:39%;
   margin:0;
   padding:0;
+  vertical-align:top;
 }
 
 .block-60 {
@@ -50,6 +54,16 @@ a {
   width:60%;
   margin:0;
   padding:0; 
+  vertical-align:top;
+}
+
+@media (max-width: 750px){
+  .block-60 {
+    width:100%;
+  }
+  .block-39 {
+    width: 100%;
+  }
 }
 
 /* Construction message */
@@ -69,20 +83,35 @@ a {
 }
 
 /* Contact */
-#contact-profile-picture {
-  position:absolute;
-  right: 0;
-  height:100%;
-}
 
 #contact-me-info {
   text-align: center;
   font-size:inherit;
+  margin-top:10%;
 }
 
 #contact-me-list {
   list-style:none;
 }
+
+@media (min-width: 1201px){
+  #contact-profile-picture {
+    height:80%;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+  }
+}
+
+@media (max-width: 1200px){
+  #contact-profile-picture {
+    height:60%;
+    display:block;
+    margin: 0 auto;
+  }
+}
+
 
 /* Header */
 
@@ -341,12 +370,20 @@ i.close-button:hover {
 }
 
 
-.panel-overlay.red {
+.panel-overlay.pink {
   background-color: rgba(229, 43, 80, 0); //clear
 }
 
-.panel-overlay.red:hover {
+.panel-overlay.pink:hover {
   background-color: rgba(229, 43, 80, 0.7); 
+}
+
+.panel-overlay.red {
+  background-color: rgba(255, 0, 0, 0); //clear
+}
+
+.panel-overlay.red:hover {
+  background-color: rgba(255, 0, 0, 0.7); 
 }
 
 .panel-overlay.green {
@@ -450,13 +487,6 @@ i.panel-arrow {
 
   i.panel-arrow {
     display:none;
-  }
-  .block-60 {
-    width:100%;
-  }
-  #contact-profile-picture {
-    width:100%;
-    height:auto;
   }
 }
 
