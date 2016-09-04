@@ -78,13 +78,34 @@ a {
 
 /* Divider and quotes */
 .divider {
-  background-color:#03D1F8;
-  background: #000; /* For browsers that do not support gradients */
-  background: linear-gradient(#999, white, #999); /* Standard syntax */
-  height:200px;
   width:100%;
   margin: 50px 0;
+  text-align:center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 20px 0;
 }
+
+.divider > h1 {
+  font-size:72px;
+  line-height:60px;
+  display:inline-block;
+  vertical-align:middle;
+  margin: 0 30px;
+}
+
+.divider .divider-squiggle {
+  display:inline-block;
+  height: 100px;
+}
+
+@media (max-width: 1000px){
+  .divider .divider-squiggle {
+    display:none;
+  }
+}
+
+/* Reference: http://www.webmaster-source.com/2012/04/24/pure-css-blockquote-styling/*/
 
 blockquote {
   font-family: Georgia, serif;
@@ -246,7 +267,7 @@ button.welcome-button {
   #welcome-centered-box {
     position:absolute;
     width:100%;
-    top:20%;
+    top:10%;
     left: 0;
     text-align:center;
   }

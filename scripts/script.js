@@ -144,8 +144,8 @@ projectData = {
 		"description": "As the UTEK 2015 Programming Competition director, design a competition package to test student's problem solving, and ability to design and write software. Click here to see the <a href=\"docs/UTEK-2016-Programming-Competition-Competitors-Package-FINAL.docx\">competition package</a>. See a prototype on <a target=\"_blank\" href=\"http://toronto-route-planner.herokuapp.com/\">heroku</a>."
 	},
 	"ss": {
-		"img-urls": ["img/project-ss-0.jpg", "img/project-ss-1.jpg"],
-		"captions": ["", ""],
+		"img-urls": ["img/project-ss-0.jpg", "img/project-ss-1.jpg", "img/project-ss-2.jpg", "img/project-ss-3.jpg"],
+		"captions": ["", "Power subsystem board layout", "Battery characterization", "Battery characterization"],
 		"description": "Power subsystem of a 3U CubeSat built by the University of Toronto Aerospace Team"
 	},
 	"house-doctor": {
