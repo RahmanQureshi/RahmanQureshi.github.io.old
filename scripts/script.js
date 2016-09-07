@@ -71,11 +71,11 @@ function loadProjectData() {
 }
 
 function enableScreenOverlay() {
-	$('#screen-overlay').addClass('fadeInFromNoneAnimation');
+	$('#screen-overlay').addClass('noneToTranslucentAnimation');
 }
 
 function disableScreenOverlay() {
-	$('#screen-overlay').removeClass('fadeInFromNoneAnimation');
+	$('#screen-overlay').removeClass('noneToTranslucentAnimation');
 }
 
 function showCarousel() {
