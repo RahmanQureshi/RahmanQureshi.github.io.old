@@ -23,7 +23,7 @@ var dislikeList = [
 (function main () {
   getDimensions();
   $(window).on('resize', onResizeHandler);
-  $(window).on('DOMContentLoaded load resize scroll', onVisibilityChange($('#about'), function() {
+  $(window).on('DOMContentLoaded load resize scroll', onVisibleLoad($('#about'), function() {
     drawCenterLine();
     populateLikeList();
     populateDislikeList();
@@ -155,7 +155,7 @@ function onResizeHandler()
   }
 }
 
-function onVisibilityChange(el, callback) {
+function onVisibleLoad(el, callback) {
     return function () {
         var visible = isElementInViewport(el);
         if (visible && !loaded) {
