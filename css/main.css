@@ -2,9 +2,37 @@
 body, html {
 	width:100%;
 	margin:0;
-	font-family: 'Roboto', sans-serif;
-  font-size:16px !important;
+	font-family: 'Roboto', sans-serif !important;
+  font-size:19px !important;
   height:100%;
+}
+
+.text-wrap {
+  width: 800px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+@media (max-width: 1500px){
+  .text-wrap {
+    margin-left:75px;
+    width:800px;
+  }
+}
+
+@media (max-width: 1250px){
+  .text-wrap {
+    margin-left:50px;
+    width:700px;
+  }
+}
+
+@media (max-width: 980px){ /* Update profile-picture CSS media query if max-width changes */
+  .text-wrap {
+    width:90%;
+    margin: 0 auto;
+    padding: 0 0;
+  }
 }
 
 .icon {
@@ -13,9 +41,14 @@ body, html {
 
 .entire-screen{
   min-height:100%;
-  display:inline-block;
   width:100%;
+}
+
+.section {
   position:relative;
+  width:100%;
+  display:inline-block;
+  padding-top:50px;
 }
 
 a {
@@ -73,9 +106,11 @@ a {
 /* About */
 
 #about-statement {
-  text-align:center;
-  margin-bottom:20px;
-  padding:0 20px;
+}
+
+#about-statement h1 {
+  font-size:50px;
+  margin: 0;
 }
 
 #about-svg {
@@ -92,9 +127,35 @@ a {
   margin-top:-36px;
 }
 
-@media (max-width: 1650px){
-  #about-svg {
-    display:none;
+/* Profile Picture */
+
+#profile-picture {
+  width:250px;
+  border-radius:50%;
+  position:absolute;
+  top:0;
+  right:9%;
+  margin-top:200px;
+}
+
+@media (max-width: 1080px){
+  #profile-picture {
+    width:200px;
+    border-radius:50%;
+    position:absolute;
+    top:0;
+    right:4%;
+    margin-top:200px;
+  }
+}
+
+@media (max-width: 980px){
+  #profile-picture {
+    position: static;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:30px;
+    display:block;
   }
 }
 
@@ -102,11 +163,10 @@ a {
 /* Divider and quotes */
 .divider {
   width:100%;
-  margin: 50px 0;
   text-align:center;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
-  padding: 20px 0;
+  padding: 0 0;
 }
 
 .divider > h1 {
@@ -114,7 +174,7 @@ a {
   line-height:60px;
   display:inline-block;
   vertical-align:middle;
-  margin: 0 30px;
+  margin: 10 0px;
 }
 
 .divider .divider-squiggle {
@@ -174,10 +234,8 @@ cite:before {
 
 /* Contact */
 
-#contact-me-info {
-  text-align: center;
-  font-size:inherit;
-  margin-top:10%;
+#contact-me {
+  text-align:center;
 }
 
 #contact-me-list {
@@ -189,25 +247,6 @@ cite:before {
   margin-left: 4px;
   margin-right: 4px;
   margin-bottom:10px;
-}
-
-
-@media (min-width: 1201px){
-  #contact-profile-picture {
-    height:80%;
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10%;
-  }
-}
-
-@media (max-width: 1200px){
-  #contact-profile-picture {
-    height:60%;
-    display:block;
-    margin: 0 auto;
-  }
 }
 
 
@@ -304,12 +343,6 @@ button.welcome-button {
   }
 }
 
-#profile-picture {
-}
-
-#profile-picture img {
-  width:100%;
-}
 
 /* Screen overlay */
 
@@ -451,6 +484,11 @@ i.close-button:hover {
 }
 
 /* Panels */
+#panel-wrap {
+  margin-top:40px;
+
+}
+
 .panel {
   display:block;
   padding:0;
@@ -546,7 +584,7 @@ i.close-button:hover {
   margin-top:15%;
   opacity:0;
   margin-bottom:10px;
-  font-size:34px;
+  font-size:40px;
   font-weight:bold;
 }
 
@@ -558,7 +596,7 @@ i.close-button:hover {
 .panel-description {
   color:white;
   opacity:0;
-  font-size:16px;
+  font-size:20px;
   padding: 0 15%;
   transition:all 500ms;
 }
@@ -570,7 +608,7 @@ i.close-button:hover {
 i.panel-arrow {
   position:absolute;
   color:white;
-  font-size:50px;
+  font-size:80px;
   top:70%;
   width:100%;
   opacity:0;
@@ -580,7 +618,7 @@ i.panel-arrow {
 
 .panel:hover i.panel-arrow {
   opacity:1;
-  top: 65%;
+  top: 55%;
 }
 
 .panel ul {
