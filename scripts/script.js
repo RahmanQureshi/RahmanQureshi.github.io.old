@@ -17,13 +17,14 @@ function init() {
 
 function setPanelHeight() {
 	var windowWidth = window.innerWidth;
+	var projectSectionWidth = $("#projects").width();
 	var panelHeight;
-	if(windowWidth > 1200) {
-		panelHeight = (windowWidth/3)*3/4;
-	} else if(windowWidth > 750 && windowWidth < 1200) {
-		panelHeight = (windowWidth/2)*3/4;
+	if(windowWidth > 1500) {
+		panelHeight = (projectSectionWidth/3)*3/4;
+	} else if(windowWidth > 951 && windowWidth < 1501) {
+		panelHeight = (projectSectionWidth/2)*3/4;
 	} else {
-		panelHeight = (windowWidth)*3/4;
+		panelHeight = (projectSectionWidth)*3/4;
 	}
 	$(".panel").css('height', panelHeight + 'px');
 }
