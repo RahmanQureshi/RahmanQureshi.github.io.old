@@ -465,6 +465,13 @@ i.close-button:hover {
   margin-right:30px;
 }
 
+@media (max-width: 800px){
+  #project-carousel {
+    display:none;
+  }
+}
+
+
 #project-carousel-wrapper {
   position:fixed;
   left:20%;
