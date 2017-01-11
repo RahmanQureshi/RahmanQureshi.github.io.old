@@ -125,9 +125,9 @@ function emptyCarousel() {
 
 projectData = {
 	"ledcube": {
-		"img-urls": ["https://www.youtube.com/embed/8kPiyt_1kfw", "img/project-ledcube-0.jpg", "img/project-ledcube-1.jpg", "img/project-ledcube-2.jpg", "img/project-ledcube-3.jpg", "img/project-ledcube-4.jpg", "img/project-ledcube-5.jpg", "img/project-ledcube-6.jpg", "img/project-ledcube-7.jpg", "img/project-ledcube-8.jpg", "img/project-ledcube-9.jpg" ],
-		"captions": ["", "Finished LED cube", "Base assembly", "Inserting the LED panels", "All LED panels inserted", "First test!", "Constructing each panel", "Bent and cut 512 LEDs", "Constructing each row", "Applying 20V to check current limiter", "PCB layout"],
-		"description": "An 8x8x8 LED cube made and designed from scratch."
+		"img-urls": ["https://www.youtube.com/embed/cFh0wQ46Q6s", "https://www.youtube.com/embed/8kPiyt_1kfw", "img/project-ledcube-0.jpg", "img/project-ledcube-0-2.jpg", "img/project-ledcube-1.jpg", "img/project-ledcube-2.jpg", "img/project-ledcube-3.jpg", "img/project-ledcube-4.jpg", "img/project-ledcube-5.jpg", "img/project-ledcube-6.jpg", "img/project-ledcube-7.jpg", "img/project-ledcube-8.jpg", "img/project-ledcube-9.jpg" ],
+		"captions": ["Pattern Video 1", "Pattern Video 2", "Finished LED cube. I don't like the control board jutting out and suffice to say I learned a lot", "Close up of control board", "Base assembly", "Inserting the LED panels", "All LED panels inserted", "First test!", "Constructing each panel", "Bent and cut 512 LEDs", "Constructing each row", "Applying 20V to check current limiter", "PCB layout"],
+		"description": "An 8x8x8 LED cube designed and constructed from scratch. It uses 9 daisy-chained 8-bit shift registers and multiplexing to control 512 LEDs using only 3 digital IO pins."
 	},
 	"ndt": {
 		"img-urls": ["img/project-ndt-0.jpg", "img/project-ndt-1.jpg", "img/project-ndt-2.jpg", "img/project-ndt-3.jpg", "img/project-ndt-4.jpg", "img/project-ndt-5.jpg", "img/project-ndt-6.jpg", "img/project-ndt-7.jpg", "img/project-ndt-8.jpg", "img/project-ndt-9.jpg"],
@@ -152,12 +152,12 @@ projectData = {
 	"house-doctor": {
 		"img-urls": ["img/project-house-doctor-0.jpg","img/project-house-doctor-1.jpg","img/project-house-doctor-2.jpg"],
 		"captions": ["","",""],
-		"description": "UofT Hacks 2015. An android app that scrapes medical information using Bing API and delivers it via SMS using the twilio API."
+		"description": "UofT Hacks 2015. This is an android app that scrapes medical information using Bing API and delivers it via SMS using the twilio API."
 	},
 	"fan": {
 		"img-urls": ["https://www.youtube.com/embed/OeW7NYT0q_o", "img/project-fan-0.jpg", "img/project-fan-1.jpg", "img/project-fan-2.jpg"],
 		"captions": ["", "", "", ""],
-		"description": "UofT Hacks 2014. Please ignore my beard. Using the Myo, Intel Edison, transistors, relays and logic gates to create a gesture-controlled fan."
+		"description": "UofT Hacks 2014. Please ignore my beard. Using the Myo, Intel Edison, transistors, relays and logic gates, my team and I created a gesture-controlled fan."
 	},
 	"template": {
 		"img-urls": [],
