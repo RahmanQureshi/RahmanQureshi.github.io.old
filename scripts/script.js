@@ -147,7 +147,7 @@ projectData = {
 	"ss": {
 		"img-urls": ["img/project-ss-0.jpg", "img/project-ss-1.jpg", "img/project-ss-2.jpg", "img/project-ss-3.jpg"],
 		"captions": ["", "Power subsystem board layout", "Battery characterization", "Battery characterization"],
-		"description": "Power subsystem of a 3U CubeSat built by the University of Toronto Aerospace Team. I worked on battery balancing, battery characterization, and software. Unfortunately I lost my entire UTAT folder so no pics :(."
+		"description": "Power subsystem of a 3U CubeSat built by the University of Toronto Aerospace Team. I worked on battery balancing, battery characterization, and port expander/humidity sensor drivers."
 	},
 	"house-doctor": {
 		"img-urls": ["img/project-house-doctor-0.jpg","img/project-house-doctor-1.jpg","img/project-house-doctor-2.jpg"],
