@@ -53,6 +53,7 @@ function attachPanelListeners() {
 		e.preventDefault();
 		enableScreenOverlay();
 		var project = $(this).attr('data-project');
+		console.log("Selected project: " + project);
 		emptyCarousel();
 		fillCarousel(projectData[project]["img-urls"], projectData[project]["captions"], projectData[project]["description"]);
 		showCarousel();
@@ -62,12 +63,6 @@ function attachPanelListeners() {
 function attachOverlayListener() {
 	$('#screen-overlay').click(function (e){
 		closeCarousel();
-	});
-}
-
-function loadProjectData() {
-	$.getJSON('data/projects.json', function (data) {
-		console.log(data);
 	});
 }
 
@@ -124,6 +119,16 @@ function emptyCarousel() {
 }
 
 projectData = {
+	"ece557": {
+		"img-urls": ["https://www.youtube.com/embed/KroSjqYk21Y", "https://www.youtube.com/embed/ZWkfFeCuIqo"],
+		"captions": ["",""],
+		"description":"The final lab for ECE557 Linear Systems Control. A simulink nonlinear model was developed and a controller to stabilize the upright equilibrium was developed and tested in simulation. Finally, it was tuned and tested in the lab.",
+	},
+	"ece470": {
+		"img-urls": ["img/ece470-1.jpg", "https://www.youtube.com/embed/JBVstMSQedI"],
+		"captions": ["", ""],
+		"description": "The final lab for ECE470 Robot Modelling and Control. The robot was modelled using DH parameters and potential based motion planning was implemented to command the arm to pick up objects and drop them off while avoiding obstacles (i.e. cylinders and the ground).",
+	},
 	"ledcube": {
 		"img-urls": ["https://www.youtube.com/embed/cFh0wQ46Q6s", "https://www.youtube.com/embed/8kPiyt_1kfw", "img/project-ledcube-0.jpg", "img/project-ledcube-0-2.jpg", "img/project-ledcube-1.jpg", "img/project-ledcube-2.jpg", "img/project-ledcube-3.jpg", "img/project-ledcube-4.jpg", "img/project-ledcube-5.jpg", "img/project-ledcube-6.jpg", "img/project-ledcube-7.jpg", "img/project-ledcube-8.jpg", "img/project-ledcube-9.jpg" ],
 		"captions": ["Pattern Video 1", "Pattern Video 2", "Finished LED cube. I don't like the control board jutting out and suffice to say I learned a lot", "Close up of control board", "Base assembly", "Inserting the LED panels", "All LED panels inserted", "First test!", "Constructing each panel", "Bent and cut 512 LEDs", "Constructing each row", "Applying 20V to check current limiter", "PCB layout"],

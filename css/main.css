@@ -407,10 +407,6 @@ button.welcome-button {
   z-index: 9;
 }
 
-.carousel-control {
-  z-index:10;
-}
-
 .carousel-video {
   position:absolute;
   left:0;
@@ -425,9 +421,12 @@ button.welcome-button {
   width:100%;
 }
 
-
-.carousel-control { /* Class defined by bootstrap. Making it shorter so that video controls can be clicked*/
-  height:95%;
+/* lower the height so videos can be clicked */
+#carousel-control-left, #carousel-control-right {
+  z-index:10;
+  height: 70%;
+  background: 0;
+  top:15%;
 }
 
 .carousel-caption {
